@@ -51,7 +51,7 @@ justify-content: flex-start;
 align-items: center;
 }
 .titulo_site{
-padding: 50px;
+padding: 50px; 
 text-align: center;
 width: 50%;
 font: 30px;
@@ -83,7 +83,7 @@ padding: 4px 8px;
 }
 .estudante{
 background-image: background-color(#faae43);
-padding: 24px 0;
+padding: 24px 0;banner.png
 }
 
 .estudante.div{
