@@ -122,16 +122,24 @@ ul li a:hover {
   background-color: #111111;
 }
 
- .video-container {
-    width: 92%;               /* No celular, deixa uma margem pequena nas laterais */
-    max-width: 800px;         /* No PC, impede que o vídeo fique grande demais */
-    margin: 25px auto;        /* Centraliza na tela em qualquer aparelho */
+ .conteudo-principal {
+  display: flex;
+  flex-direction: column; /* Coloca o mapa abaixo do vídeo */
+  align-items: center;    /* Centraliza tudo horizontalmente */
+  gap: 40px;              /* Cria um espaço entre o vídeo e o mapa */
+  padding: 20px;
 }
 
-.video-container iframe {
-    width: 100%;              /* Estica o vídeo para preencher a div */
-    height: auto;             /* Ignora alturas fixas antigas */
-    aspect-ratio: 16 / 9;     /* Mantém o formato retangular de vídeo sem cortar */
-    border-radius: 12px;      /* Deixa os cantos arredondados */
-    display: block;           /* Evita espaços fantasma embaixo do vídeo */
+.secao-video, .secao-mapa {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;       /* Limita a largura máxima */
 }
+
+.secao-mapa iframe {
+  width: 100%;            /* Faz o mapa ocupar toda a largura da seção */
+  height: 400px;          /* Define uma boa altura para visualização */
+  border-radius: 12px;    /* Deixa os cantos arredondados como o vídeo */
+  position: static;       /* Garante que não fique preso no canto */
+}
+
