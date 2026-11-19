@@ -225,3 +225,15 @@ ul li a:hover {
 .link-jogo a:hover {
     text-decoration: underline;
 }
+
+
+/* Centraliza os títulos (h1, h2, h3, etc.) */
+h1, h2, h3 {
+  text-align: center;
+}
+
+/* Centraliza o vídeo do YouTube e o mapa do Google */
+iframe {
+  display: block;
+  margin: 0 auto;
+}
