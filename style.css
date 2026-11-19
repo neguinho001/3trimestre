@@ -226,14 +226,9 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-
-/* Centraliza os títulos (h1, h2, h3, etc.) */
-h1, h2, h3 {
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-}
-
-/* Centraliza o vídeo do YouTube e o mapa do Google */
-iframe {
-  display: block;
-  margin: 0 auto;
 }
