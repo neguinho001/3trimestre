@@ -234,8 +234,10 @@ ul li a:hover {
 }
 
 
-.conteudo-centralizado {
+.secao-video,
+.secao-mapa {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px; /* Dá um espaço extra entre o vídeo e o mapa */
 }
