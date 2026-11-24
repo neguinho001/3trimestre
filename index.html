@@ -125,11 +125,33 @@ todas abaixo-->
 <img class="logo_rodape" src="WhatsApp Image 2026-11-04 at 11.35.00.jpeg" alt="Logo da Escola">
 <h2 class="escola-título">Mais informações entre em contato<a class="link"
 
-href="https://wa.me/5541999999999"> 41 9.9999-9999 </a></h2>
+href="https://wa.me/5541999999999"> 41 9.9525-1074 </a></h2>
 <p></p>
 <p>©2024 | Curso de ADS | Todos os Direitos Reservados.
 Política de Privacidade | Proteção de dados | Encarregado de dados</p>
 <p> </p>
 </footer>
+
+<script>
+  const blocos = document.querySelectorAll(
+    '.banner1, .estudante-div, .secao-video, .secao-mapa, .secao-jogo, .escola'
+  );
+
+  const observador = new IntersectionObserver((entradas) => {
+    entradas.forEach((entrada) => {
+      if (entrada.isIntersecting) {
+        entrada.target.style.opacity = '1';
+        entrada.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.15 });
+
+  blocos.forEach((bloco) => {
+    bloco.style.opacity = '0';
+    bloco.style.transform = 'translateY(50px)';
+    bloco.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+    observador.observe(bloco);
+  });
+</script>
 </body>
 </html>
